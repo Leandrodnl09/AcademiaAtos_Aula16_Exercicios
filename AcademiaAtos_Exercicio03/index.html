@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de Botão</title>
+</head>
+<body>
+	<button id="meu-botao">Clique em mim!</button>
+	<p id="mensagem"></p>
+
+	<button id="myButton" onclick="countClicks()">Ok!</button>
+<script>
+  var count = 0;
+  function countClicks() {
+    count++;
+    if (count <= 5) {
+      alert("Botão clicado " + count + " vezes!");
+    }
+    if (count === 5) {
+      document.getElementById('myButton').disabled = true;
+    }
+  }
+</script>
+</body>
+</html>
